@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(235, 224, 229);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgb(25, 25, 26) 100%
+  );
+}
+
+h1 {
+  position: absolute;
+  top: 40px;
+  font-size: 50px;
+  font-family: "Eczar", serif;
+}
+
+.container {
+  min-height: 300px;
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.container > h2 {
+  text-align: center;
+  margin: 0 15px;
+  margin-top: 20px;
+}
+
+.container > button {
+  height: 40px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgb(236, 164, 171);
+  background: radial-gradient(
+    circle,
+    rgba(236, 164, 171, 1) 16%,
+    rgba(225, 197, 156, 1) 57%
+  );
+  transition: all 0.2s ease;
+}
+
+.container > button:hover {
+  font-size: 21px;
+}
+
+.quiz-container .answers {
+  margin-left: 40px;
+  font-size: 21px;
+}
+
+.question-answer {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.invisible {
+  display: none;
+}
